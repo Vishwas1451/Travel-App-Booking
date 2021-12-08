@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width",initial-scale = 1.0">
+        <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+
+        <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+
+        <title>Travmora</title>
+        <link rel = "stylesheet" href = "./main_page2.css">
+    </head>
+
+    <body>
+        <div id = "first"></div>
+        <style>
+            body{
+                background-image: url('./6.png');
+                background-size: 1370px 720px;
+                background-attachment : fixed;
+                background-size: cover;
+            }
+
+            @font-face{
+                font-family :'trapL';
+                src : url(fonts/Trap-Light.otf);
+            }
+
+        </style>
+
+            <script type = "text/babel">
+                var dest = document.getElementById("first");
+
+
+                class Counter extends React.Component {
+                 render() {
+                     var divStyle = {
+                       fontSize : "31.43px",
+                       fontWeight: this.props.fweight,
+                       color:"white",
+                       display:"inline",
+                       position:"relative",
+                       left:this.props.pad,
+                       fontFamily:this.props.font,
+                        border:"none",
+                        backgroundColor:"Transparent",  
+                        cursor:"pointer",
+                        variant:"link",
+                        // textDecoration:this.props.decoration,
+                        hover:""
+                     }
+                    return (<a href="./travmora_home.html" style = {{"textDecoration":"none"}}>
+                         <button className="but" style={divStyle}>{this.props.name}</button>
+                         </a>
+                     );
+                 }
+             }
+                class CounterOne extends React.Component {
+                 render() {
+                     var divStyle = {
+                       fontSize : "24.08px",
+                       fontWeight: this.props.fweight,
+                       color:"white",
+                       display:"inline",
+                       position:"relative",
+                       left:this.props.pad,
+                       fontFamily:this.props.font,
+                        border:"none",
+                        backgroundColor:"Transparent",  
+                        cursor:"pointer",
+                        variant:"link",
+                        // textDecoration:this.props.decoration,
+                        hover:""
+                     }
+                     return (<a href="./travmora_home.html" style = {{"textDecoration":"none"}}>
+                         <button className="but" style={divStyle}>{this.props.name}</button>
+                         </a>
+                     );
+                 }
+             } 
+             class CounterTwo extends React.Component {
+                 render() {
+                     var divStyle = {
+                       fontSize : "24.08px",
+                       fontWeight: this.props.fweight,
+                       color:"white",
+                       display:"inline",
+                       position:"relative",
+                       left:this.props.pad,
+                       fontFamily:this.props.font,
+                        border:"none",
+                        backgroundColor:"Transparent",  
+                        cursor:"pointer",
+                        variant:"link",
+                        // textDecoration:this.props.decoration,
+                        hover:""
+                     }
+                     return (<a href="./contact.html" style = {{"textDecoration":"none"}}>
+                         <button className="but" style={divStyle}>{this.props.name}</button>
+                         </a>
+                     );
+                 }
+             } 
+
+
+                ReactDOM.render(
+                    <div>
+                        <Counter name="travmora" font="trapL" fsize="31.43" fweight="lighter" pad="5"/>
+                            <CounterOne name="Home" pad="1040px" font="trapL" fsize="30.08" fweight="5" />
+                            <CounterTwo name="About" pad="1105px" font="trapL" fsize="18.08" fweight="5" />
+                        
+                        </div>
+                ,dest);
+            
+            </script>
+            <div>
+                <a href = "./vadhoo.html">
+                <div class="image1" style = "left : 105px;top : 100px">
+                    <img class = "vadhoo_img" src = "vadhoo1.png" alt = "Vadhoo"/>
+                    <div class="vadhoo_overlay">
+                        <div class="vadhoo_title">Vadhoo</div>
+                    </div>
+                </a>
+                </div>
+                <a href = "male.html">
+                <div class="image2" style = "left : 445px;top : 100px">
+                    <img class = "malecity_img" src = "male1.png" alt = "MaleCity"/>
+                    <div class="malecity_overlay">
+                        <div class="malecity_title">Male City</div>
+                    </div>
+                </div>
+            </a>
+            <a href = "como_cocoa.html">
+                <div class="image3" style = "left : 775px;top : 100px">
+                    <img class = "comococoa_img" src = "como_cocoa1.png" alt = "ComoCocoa"/>
+                    <div class="comococoa_overlay">
+                        <div class="comococoa_title">Como Cocoa</div>
+                    </div>
+                </div>
+            </a>
+                <a href = "addu_atoll.html">
+                <div class="image4" style = "left : 1105px;top : 100px">
+                    <img class = "adduatoll_img" src = "addu_atoll1.png" alt = "AdduAtoll"/>
+                    <div class="adduatoll_overlay">
+                        <div class="adduatoll_title">Addu Atoll</div>
+                    </div>
+                </div>
+            </div>
+        </a>
+            <a href = "baros.html">
+            <div>
+                <div class="image5" style = "left : 105px;top : 340px">
+                    <img class = "baros_img" src = "baros1.png" alt = "Baros"/>
+                    <div class="baros_overlay">
+                        <div class="baros_title">Baros</div>
+                    </div>
+                </div>
+            </a>
+                <a href = "gan.html">
+                <div class="image6" style = "left : 445px;top : 340px">
+                    <img class = "gan_img" src = "gan1.png" alt = "Gan"/>
+                    <div class="gan_overlay">
+                        <div class="gan_title">Gan</div>
+                    </div>
+                </div>
+            </a>
+                <a href = "maafushii.html">
+                <div class="image7" style = "left : 775px;top : 340px">
+                    <img class = "mafushoo_img" src = "mafushii1.png" alt = "Maafushi"/>
+                    <div class="mafushoo_overlay">
+                        <div class="mafushoo_title">Maafushi</div>
+                    </div>
+                </div>
+            </a>
+                <a href = "rangali.html">
+                <div class="image8" style = "left : 1105px;top : 340px">
+                    <img class = "rangoli_img" src = "rangali1.png" alt = "Rangoli"/>
+                    <div class="rangoli_overlay">
+                        <div class="rangoli_title">Rangoli</div>
+                    </div>
+                </div>
+            </a>
+            
+            </div>
+    </body>
+
+</html>

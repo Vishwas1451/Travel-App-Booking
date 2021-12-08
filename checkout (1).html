@@ -1,0 +1,119 @@
+<html>
+    <head>
+        <title>React !!!</title>
+        <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+        <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+        <style>
+            .bigblue {
+                color: blue;
+            }
+            body{
+                
+                background-image: url("C:/Users/hp/OneDrive/Pictures/Screenshots/q.png");
+            }
+            #count{
+                border-radius: 20px;
+                height:500;
+                position:fixed;
+                left:400;
+                top:100px;
+                width: 600px;
+                /* textAlign: center; */
+                background-color: rgb(248, 247, 242);
+                padding: 40px;
+                font-family: sans-serif;
+                
+                
+            }
+            #First_Name,#Last_Name,#Email_Address{
+                margin-bottom: 20px;
+            }
+            #Mobile_Number{
+                margin-bottom: 30px;
+            }
+            #Expiry_Date,#w{
+                margin-top: 1px;
+                margin-bottom: 1px;
+            }
+            #First_Name,#Last_Name,#Email_Address,#Mobile_Number,#Card_Number,#Expiry_Date,#CVV{
+                border-width: 2px;
+                border-color: rgb(111, 199, 240);
+            }
+           
+        </style>
+    </head>
+<body>
+    <div>
+    <p style="font-family: sans-serif;color: rgb(250, 245, 245); font-size: 30px;margin: 0;display: inline; font-weight:lighter;" >travmora</p>
+    <span style="margin-left: 60em;"><p style="font-family: sans-serif;color: rgb(250, 245, 245); font-size: 20px; margin: 0;display: inline;">Home</p ></span>
+        <span style="margin-left: 3em;"><p style="font-family: sans-serif;color: rgb(250, 245, 245); font-size: 20px; margin: 0;display: inline;">About</p ></span>
+            <span style="margin-left: 3em;"><p style="font-family: sans-serif;color: rgb(250, 245, 245); font-size: 20px; margin: 0;display: inline;">Contact</p ></span>
+                <span style="margin-left: 3em;"><p style="font-family: sans-serif;color: rgb(99, 240, 250); font-size: 20px; margin: 0;display: inline;background-color: white;border-radius:10px;border-width:5px;border-color: white;">Book Now</p ></span>
+    
+    
+    </div>
+    <div id="first1"></div>
+    <div id="second"></div>
+    <div id="hello-example"></div>
+    <br><br>
+    <div id="buttonR"></div>
+    <br><br>
+    <div id="button"></div>
+    <!-- <hr> -->
+    <div id="avg"></div>
+    <div id="light"></div>
+    <div id="stateless"></div>
+    <div id="cust"></div>
+    <div id="num"></div>
+    <div id="num1"></div>
+    <div id="namel"></div>
+    <div id="count">
+        <div id="fff">
+            <p style="font-size: 25px;"><b>Enter Details</b></p>
+            <div>
+            <input type="text" id="First_Name" placeholder="First Name" size="40px" style="height: 40px;text-size-adjust: 10px;" style="margin-bottom:20px;"> 
+             <input type="text" id="Last_Name" placeholder="Last Name" size="38px" style="height: 40px;">
+             </div>
+           
+            <input type="text" id="Email_Address" placeholder="Enter Email Address" size="84.4px" style="height: 40px;">
+            <input type="text" id="Mobile_Number" placeholder="Enter Mobile Number" size="84.4px" style="height: 40px;">
+            
+        </div>
+        <div id="sss">
+            &nbsp;<p style="font-size: 25px; color: rgb(10, 10, 10);"><b>Payment Mode</b></p>
+            <p id="w" style="font-size: 20px;">Debit/Credit Card</p>
+            <input type="text" placeholder="Card Number" id="Card_Number" size="86.4px" style="height: 30px">
+            <label>
+            &nbsp;&emsp;<p id="w" style="font-size: 20px;">Expiry Date&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Enter CVV</p>  
+            <input type="text" placeholder="MM/YY" id="Expiry_Date" size="20px" style="height: 30px;" >&emsp;&emsp; &emsp;&emsp; &emsp; &emsp; &emsp;     <input type="text" placeholder="CVV no." id="CVV" size="20px" style="height: 30px;" >   
+            </label> 
+        </div>
+    </div>
+    <div id="mydiv"></div>
+    <div id="form"></div>
+    <div id="reser"></div>
+    <div id="first"></div>
+    <!-- <script type=text/babel>
+     class Counter extends React.Component {
+                 render() {
+                     var divStyle = {
+                         height:350,
+                         position:"fixed",
+                         left:400,
+                         top:120,
+                         width: 650,
+                         textAlign: "center",
+                         backgroundColor: "white",
+                         padding: 40,
+                         color: "#999"
+                     };
+                     return (
+                         <div style={divStyle}><LightCounter /></div>
+                     );
+                 }
+             }
+            ReactDOM.render(<Counter/>, count);
+        </script> -->
+    </body>
+</html>

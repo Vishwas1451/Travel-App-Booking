@@ -1,0 +1,118 @@
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title>React</title>
+		<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+
+        <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+	
+        <link rel = "stylesheet" type = "text/css" href = "style.css">
+    </head>
+		<body>
+                <div id = "first"></div>
+                <br>
+                <br>
+                <br>
+                
+                <!--<div id = "secbg" style = "border-radius: 20px;background-color: #558ba9; position: absolute;width : 1008px;height : 80px;left : 174px;top : 95px;"></div>-->
+                <div id = "second">
+                    <a id = "asecond" href = "./travmora_2nd_page.html">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+            
+                        Search
+                    </a>
+                </div>
+                
+            <style>
+
+                body{
+                background-image : url('./travmora_main-2.png');
+                background-size: 1370px 720px;
+                background-attachment : fixed;
+                background-size: cover;
+                }
+
+                @font-face{
+                    font-family :'trapL';
+                    src : url("./fonts/Trap-Light.otf");
+                    
+                }
+
+                #atopbar{
+                    text-decoration: none;
+                }
+                
+            </style>
+
+            <script type = "text/babel">
+                var dest = document.getElementById("first");
+                var dest2 = document.getElementById("second");
+
+                class Topbar extends React.Component{
+                    render(){
+                        var divstyle = {
+                            fontSize : this.props.fsize,
+                            fontWeight : this.props.fweight,
+                            color : "white",
+                            display : "inline",
+                            position : "relative",
+                            left : this.props.pad,
+                            fontFamily : this.props.font,
+                            //margin : this.props.mar
+                        }
+                        return(
+                            <a id = "atopbar" href = {this.props.link} style = {divstyle}>{this.props.name}</a>
+                        );
+                    }
+                }
+
+               /*
+
+                class Search extends React.Component{
+                    render(){
+                        var divstyle = {
+                            fontSize : this.props.fsize,
+                            //fontWeight : this.props.fweight,
+                            //color : "white",
+                            //display : "inline",
+                            position : "relative",
+                            left : this.props.pad,
+                            fontFamily : this.props.font,
+                            width : 1000,
+                            height : 75,
+                            borderRadius: 20,
+                            //backgroundImage : "url(/search.png)",
+                            //margin : this.props.mar
+                        }
+                        return(
+                            <input type="text" placeholder=" Search...." name="search" style = {divstyle}/>
+                        );
+                    }
+                }
+                */ 
+                ReactDOM.render(
+                    <div>
+                        <Topbar name = "travmora" font = "trapL" fsize="31.43px" link = "./travmora_home.html" fweight = "lighter" pad = "5"/>
+                       
+                        <Topbar name = "Home" pad = "1020px" font = "trapL" link = "./travmora_home.html" fsize = "24.08" fweight = "5"/>
+                        
+               
+                        <Topbar name = "About" pad = "1079px" font = "trapL" link = "./contact.html" fsize = "24.08" fweight = "5"/>
+                            
+                        </div>
+                ,dest);
+                    /*
+                ReactDOM.render(
+                    <Search pad = "170px" font = "trapL" fsize = "31.43"/>,dest2
+                );
+                */
+            </script>
+        </body>
+
+        
+</html>

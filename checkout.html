@@ -1,0 +1,269 @@
+<html>
+    <head>
+        <title>CHECKOUT PAGE</title>
+        <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+        <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+        <style>
+           @font-face {
+                 font-family:'trapl';
+                 src: url('fonts/Trap-Light.otf');
+                }
+                @font-face {
+                 font-family:'trapeb';
+                 src: url('fonts/Trap-ExtraBold.otf');
+                }    
+                
+            body{
+                background-image: url('./6.png');
+
+            } 
+             .count{
+                border-radius: 20px;
+                height:550;
+                position:fixed;
+                left:400;
+                top:90px;
+                width: 600px;
+                /* textAlign: center; */
+                background-color: rgb(248, 247, 242);
+                padding: 40px;
+                
+                
+                
+            }
+            .First_Name,.Last_Name,.Email_Address{
+                margin-bottom: 20px;
+            }
+            .Mobile_Number{
+                margin-bottom: 30px;
+            }
+            .Expiry_Date,.w{
+                margin-top: 1px;
+                margin-bottom: 1px;
+            }
+            .Select_date{
+                margin-top: 1px; 
+            }
+            .First_Name,.Last_Name,.Email_Address,.Mobile_Number,.Select_date,.Card_Number,.Expiry_Date,.CVV{
+                border-width: 3px;
+                border-color: rgb(111, 199, 240);
+                font-family: trapl;
+                font-size: 18px;
+            }
+            .w{
+                font-size: 20px;
+            }
+            
+              
+        </style>
+    </head>
+<body>
+    <div id="first"></div>
+    <div id="second"></div>
+    <script type=text/babel>
+     class Counter extends React.Component {
+                 render() {
+                     var divStyle = {
+                       fontSize : this.props.fsize,
+                       fontWeight: this.props.fweight,
+                       color:"white",
+                       display:"inline",
+                       position:"relative",
+                       left:this.props.pad,
+                       fontFamily:this.props.font,
+                        border:"none",
+                        backgroundColor:"Transparent",  
+                        cursor:"pointer",
+                        variant:"link",
+                        // textDecoration:this.props.decoration,
+                        hover:""
+                     }
+                     return (<a href="./travmora_home.html" style = {{"textDecoration":"none"}}>
+                         <button className="but" style={divStyle}>{this.props.name}</button>
+                         </a>
+                     );
+                 }
+             }
+             class CounterOne extends React.Component {
+                 render() {
+                     var divStyle = {
+                       fontSize : this.props.fsize,
+                       fontWeight: this.props.fweight,
+                       color:"white",
+                       display:"inline",
+                       position:"relative",
+                       left:this.props.pad,
+                       fontFamily:this.props.font,
+                        border:"none",
+                        backgroundColor:"Transparent",  
+                        cursor:"pointer",
+                        variant:"link",
+                        // textDecoration:this.props.decoration,
+                        hover:""
+                     }
+                     return (<a href="./travmora_home.html" style = {{"textDecoration":"none"}}>
+                         <button className="but" style={divStyle}>{this.props.name}</button>
+                         </a>
+                     );
+                 }
+             } 
+             class CounterTwo extends React.Component {
+                 render() {
+                     var divStyle = {
+                       fontSize : this.props.fsize,
+                       fontWeight: this.props.fweight,
+                       color:"white",
+                       display:"inline",
+                       position:"relative",
+                       left:this.props.pad,
+                       fontFamily:this.props.font,
+                        border:"none",
+                        backgroundColor:"Transparent",  
+                        cursor:"pointer",
+                        variant:"link",
+                        // textDecoration:this.props.decoration,
+                        hover:""
+                     }
+                     return (<a href="./contact.html" style = {{"textDecoration":"none"}}>
+                         <button className="but" style={divStyle}>{this.props.name}</button>
+                         </a>
+                     );
+                 }
+             } 
+             class CounterThree extends React.Component {
+                 render() {
+                     var divStyle = {
+                       fontSize : this.props.fsize,
+                       fontWeight: this.props.fweight,
+                       color:"white",
+                       display:"inline",
+                       position:"relative",
+                       left:this.props.pad,
+                       fontFamily:this.props.font,
+                        border:"none",
+                        backgroundColor:"Transparent",  
+                        cursor:"pointer",
+                        variant:"link",
+                        // textDecoration:this.props.decoration,
+                        hover:""
+                     }
+                     return (
+                         <button className="but" style={divStyle} onClick={()=>{alert("contact is clicked")}}>{this.props.name}</button>
+                     );
+                 }
+             }      
+            ReactDOM.render(<div>
+                <Counter name="travmora" font="trapl"fsize="31.43" fweight="lighter" pad="5"/>
+                            <CounterOne name="Home" pad="1040px" font="trapl" fsize="18.08" fweight="5" />
+                            <CounterTwo name="About" pad="1105px" font="trapl" fsize="18.08" fweight="5" />
+                
+                            </div>,document.getElementById('first'));
+       
+       
+            
+                class MiddleBox extends React.Component{
+                        constructor(props){ 
+                             super(props);
+                              this.state={value1:"",
+                             value2:"",value3:"",value4:"",value5:"",value6:"",value7:""};
+                        //     // this.stateFour={valueFour:""};
+                        //     // this.stateFive={valueFive:""};
+                        //     // this.stateSix={valueSix:""};
+                        //     // this.stateSeven={valueSeven:""};
+                                 this.bookSubmit=this.bookSubmit.bind(this);
+                              
+                               
+                             this.handleChange = this.handleChange.bind(this);
+                             this.handleChangeTwo = this.handleChangeTwo.bind(this);
+                            this.handleChangeThree = this.handleChangeThree.bind(this);
+                            this.handleChangeFour = this.handleChangeFour.bind(this);
+                            this.handleChangeFive = this.handleChangeFive.bind(this);
+                            this.handleChangeSix = this.handleChangeSix.bind(this);
+                            this.handleChangeSeven = this.handleChangeSeven.bind(this);
+                        }
+                         handleChange(event){
+                             this.setState({value1:event.target.value});
+                         }
+                        handleChangeTwo(event){
+                            this.setState({value2:event.target.value});
+                        }
+                        handleChangeThree(event){
+                            this.setState({value3:event.target.value});
+                        }
+                        handleChangeFour(event){
+                            this.setState({value4:event.target.value});
+                        }
+                        handleChangeFive(event){
+                            this.setState({value5:event.target.value});
+                        }
+                        handleChangeSix(event){
+                            this.setState({value6:event.target.value});
+                        }
+                        handleChangeSeven(event){
+                            this.setState({value7:event.target.value});
+                        } 
+                bookSubmit(e){
+                      if(this.state.value1=="")
+                        { alert("fill first name");}
+                       else if(this.state.value2=="")
+                        { alert("fill last name");}
+                        else if(this.state.value3=="")
+                        { alert("fill email address");}
+                    else if(this.state.value4=="")
+                     {alert("fill mobile number");}
+                     else if(this.state.value5=="")
+                     {alert("fill card number");}
+                    else if(this.state.value6=="")
+                     {alert("fill expiry date");}
+                     else if(this.state.value7=="")
+                     {alert("fill CVV No"); } 
+                    else  
+                    { alert("book is clicked"+ " " +this.state.value1 + " " +this.state.value2 +" " + this.state.value3+" " +this.state.value4+" " +this.state.value5+" " +this.state.value6+" " +this.state.value7+
+                               "successfully booked");}
+                    
+                    e.preventDefault();
+                   
+                 }
+                
+                    render(){
+                        return(<form  action="./register.html" method="POST">
+                            <div className="count">
+                               <div className="fff">
+                                   <p style={
+                                       {fontSize:"25px",
+                                       fontFamily:"trapeb"
+                                    }
+                                }>Enter Details*</p>
+                               
+                               <input type="text" className="First_Name" name="firstname" placeholder="First Name*" pattern="^[a-z,A-Z]{0,}$" value={this.state.value1} onChange={this.handleChange} size="20px" style={{height:" 40px",width:"280",textSizeAdjust:"130px",marginBottom:"20px"}}/>&emsp;&emsp; 
+                               <input type="text" className="Last_Name" name="lastname" placeholder="Last Name*" pattern="^[a-z,A-Z]{0,}$" size="38px" value={this.state.value2} onChange={this.handleChangeTwo} style={{height:" 40px",width:"280"}}/>
+                               <input type="text" className="Email_Address" name="email" placeholder="Enter Email Address*" pattern="^[_a-zA-Z0-9-]+(\.[_a-zA-Z0-9-]+)*@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*\.(([0-9]{1,3})|([a-zA-Z]{2,3})|(com|edu|info|museum|name))$" value={this.state.value3} onChange={this.handleChangeThree} size="84.4px" style={{height: "40px",width:"593"}}/>
+                               <input type="text" className="Mobile_Number" name="mobile" placeholder="Enter Mobile Number*" pattern="^(0|”+91”)?[6-9]\d{9}$" value={this.state.value4} onChange={this.handleChangeFour}   size="84.4px" style={{height: "40px",width:"593"}}/>
+                               <input type="date" className="Select_date" name="booking_date" placeholder="Select date" size="20px" style={{height:" 40px",width:"450",fontFamily:"trap1",textSizeAdjust:"230px"}}/>
+                             <p style={{fontSize:"25px",color:"black",fontFamily:"trapeb"}}><b>Payment Mode*</b></p>
+                             <p className="w" style={{fontsize: "30px"}}>Debit/Credit Card*</p>
+                             <input type="text" placeholder="Card Number*" pattern="^[a-z,A-Z,0-9]{0,12}$" className="Card_Number" name="cardnumber" value={this.state.value5} onChange={this.handleChangeFive}  size="86.4px" style={{height: "30px",width:"593"}}/>&emsp;
+                             &emsp;&emsp;<p className="w" style={{fontsize: "30px"}}>Expiry Date*&nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Enter CVV*</p> 
+                             <input type="text" placeholder="MM/YY*"  className="Expiry_Date" name="expiry" value={this.state.value6} onChange={this.handleChangeSix}  size="20px" style={{height: "30px" }}/>&emsp;&emsp; &emsp;&emsp; &emsp; &emsp; &emsp;    
+                             <input type="password" placeholder="CVV no.*"  className="CVV"  name="cvv" value={this.state.value7} onChange={this.handleChangeSeven}  size="20px" style={{height: "30px"}} /> 
+                             
+                             </div>
+                             <br/>
+                             <div>
+                                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                             <input type="submit" value="BOOK NOW" className="Book_Now" size="35px" style={{height: "40px","width" : "110px","color":"white", "backgroundColor" : "rgb(9, 129, 241)","borderRadius":"5px"}}/> 
+                               </div>
+                               </div>
+                               </form>
+                        );
+                    }
+                }
+             ReactDOM.render(<MiddleBox/>,document.getElementById('second'));
+
+
+    
+                  
+        </script>
+    </body>
+</html>

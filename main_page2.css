@@ -1,0 +1,67 @@
+@font-face{
+    font-family :'trapL';
+    src : url(fonts/Trap-Light.otf);
+    
+}
+
+.image1{
+    position : absolute;
+    width : 300px;
+    top : 20px;
+}
+
+
+
+.image2,.image3,.image4,.image5,.image6,.image7,.image8{
+    position : absolute;
+    width : 300px;
+    height : 200px;
+    top : 20px;
+}
+
+
+
+.vadhoo_img , .malecity_img, .comococoa_img, .adduatoll_img, .baros_img, .gan_img, .mafushoo_img, .rangoli_img{
+    display : block;
+    width : 100%;
+    height : 100%;
+    border : 3px solid #558ba9;
+}
+
+.vadhoo_overlay , .malecity_overlay, .comococoa_overlay, .adduatoll_overlay, .baros_overlay, .gan_overlay, .mafushoo_overlay, .rangoli_overlay{
+    position : absolute;
+    top : 0;
+    left : 0;
+    width : 100%;
+    height : 100%;
+    background : rgba(0,0,0,0.6);
+    color : #ffffff;
+    font-family : 'trapL',sans-serif;
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+    justify-content : center; 
+    opacity : 0; 
+    transition : opacity 0.50s;
+    border : 3px solid #558ba9;
+}
+
+.vadhoo_overlay>* , .malecity_overlay >*, .comococoa_overlay >*, .adduatoll_overlay >*, .baros_overlay >*, .gan_overlay >*, .mafushoo_overlay >*, .rangoli_overlay >*{
+    transform : translateY(20px);
+    transition : transform 0.50s;
+}
+
+.vadhoo_overlay:hover , .malecity_overlay:hover, .comococoa_overlay:hover, .adduatoll_overlay:hover, .baros_overlay:hover, .gan_overlay:hover, .mafushoo_overlay:hover, .rangoli_overlay:hover{
+    opacity : 5;
+}
+
+.vadhoo_overlay:hover>* , .malecity_overlay:hover >*, .comococoa_overlay:hover>*, .adduatoll_overlay:hover>*, .baros_overlay:hover>*, .gan_overlay:hover>*, .mafushoo_overlay:hover>*, .rangoli_overlay:hover>*{
+    transform : translateY(0px);
+}
+.vadhoo_title , .malecity_title, .comococoa_title, .adduatoll_title, .baros_title, .gan_title, .mafushoo_title, .rangoli_title{
+    font-size : 2em;
+    font-weight : bold;
+}
+ 
+
+
